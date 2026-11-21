@@ -32,7 +32,6 @@ export default function HudStudio(){
  const [fingers,setFingers]=useState(4);
  const [name,setName]=useState('Meu HUD');
  const [message,setMessage]=useState('');
- const active=controls.find(c=>c.id===selected);
  useEffect(()=>store(savedKey,profiles),[profiles]);
  const change=(id:string,patch:Partial<HudControl>)=>setControls(old=>old.map(c=>c.id===id?{...c,...patch}:c));
  function save(){const item:HudProfile={id:globalThis.crypto?.randomUUID?.()||String(Date.now()),name:name.trim()||'Meu HUD',fingers,controls:controls.map(c=>({...c}))};setProfiles(old=>[item,...old]);setMessage('HUD salvo neste navegador.')}
