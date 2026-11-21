@@ -1,0 +1,5 @@
+export interface Filters {search:string;region:string;platform:string;favoritesOnly:boolean}
+export default function PlayerFilters({filters,onChange}: {filters:Filters;onChange:(value:Filters)=>void}) {
+ const set=<K extends keyof Filters>(key:K,value:Filters[K])=>onChange({...filters,[key]:value});
+ return <section className="filter-bar"><label><span>Pesquisar</span><input value={filters.search} onChange={e=>set('search',e.target.value)} placeholder="Nome do jogador"/></label><label><span>Região</span><select value={filters.region} onChange={e=>set('region',e.target.value)}><option value="all">Todas as regiões</option><option value="Brasil">Brasil</option><option value="Internacional">Internacional</option></select></label><label><span>Dispositivo</span><select value={filters.platform} onChange={e=>set('platform',e.target.value)}><option value="all">Todos</option><option value="mobile">Mobile</option><option value="emulador">Emulador</option></select></label><label className="checkbox-label"><input type="checkbox" checked={filters.favoritesOnly} onChange={e=>set('favoritesOnly',e.target.checked)}/> Só favoritos</label></section>;
+}
