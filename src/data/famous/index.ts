@@ -1,0 +1,13 @@
+import playersJson from './players.json';
+import sensitivitiesJson from './sensitivities.json';
+import hudsJson from './huds.json';
+import sourcesJson from './sources.json';
+import type { Player, Sensitivity, FamousHudData, Source } from '../../types/famous';
+export const players = playersJson as Player[];
+export const sensitivities = sensitivitiesJson as Sensitivity[];
+export const huds = hudsJson as FamousHudData[];
+export const sources = sourcesJson as Source[];
+export const getPlayer = (id:string) => players.find(p=>p.id===id);
+export const getSensitivity = (id:string) => sensitivities.find(s=>s.playerId===id);
+export const getHud = (id:string) => huds.find(h=>h.playerId===id);
+export const getSource = (id:string) => sources.find(s=>s.id===id);

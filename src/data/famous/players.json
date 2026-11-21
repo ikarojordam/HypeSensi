@@ -1,0 +1,610 @@
+[
+  {
+    "id": "nobru",
+    "name": "Nobru",
+    "region": "Brasil",
+    "role": "Criador / competitivo",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "cerol",
+    "name": "Cerol",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "bak",
+    "name": "Bak",
+    "region": "Brasil",
+    "role": "Competitivo / criador",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "coringa",
+    "name": "Coringa",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "thurzin",
+    "name": "Thurzin",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "two9",
+    "name": "Two9",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "piuzinho",
+    "name": "Piuzinho",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "el-gato",
+    "name": "El Gato",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "buxexa",
+    "name": "Buxexa",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "crusher-fooxi",
+    "name": "Crusher Fooxi",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "gb0012",
+    "name": "GB0012",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "weedzao",
+    "name": "Weedzao",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "emulador",
+    "hasPublishedData": false
+  },
+  {
+    "id": "playhard",
+    "name": "PlayHard",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "shariin",
+    "name": "Shariin",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "voltan",
+    "name": "Voltan",
+    "region": "Brasil",
+    "role": "Criadora",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "babi",
+    "name": "Babi",
+    "region": "Brasil",
+    "role": "Criadora",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "maellen",
+    "name": "Maellen",
+    "region": "Brasil",
+    "role": "Criadora",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "lzinn",
+    "name": "Lzinn",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "racha",
+    "name": "Racha",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "yuri-22",
+    "name": "Yuri 22",
+    "region": "Brasil",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "freitas",
+    "name": "Freitas",
+    "region": "Brasil",
+    "role": "Criador / HUD publicado",
+    "platform": "mobile",
+    "hasPublishedData": true
+  },
+  {
+    "id": "bops",
+    "name": "Bops",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "butzin",
+    "name": "Butzin",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "general",
+    "name": "General",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "giuh",
+    "name": "Giuh",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "mt7",
+    "name": "MT7",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "raone7",
+    "name": "Raone7",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "rigby",
+    "name": "Rigby",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "noda",
+    "name": "Noda",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "haax",
+    "name": "Haax",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "trap",
+    "name": "Trap",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "guaxa7",
+    "name": "Guaxa7",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "nickz7",
+    "name": "Nickz7",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "proxx7",
+    "name": "Proxx7",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "yago",
+    "name": "Yago",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "bzp10",
+    "name": "bzp10",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "hak",
+    "name": "HAK",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "mtsexy",
+    "name": "mtsexy",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "luan7",
+    "name": "Luan7",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "nando9",
+    "name": "NANDO9",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "p-o7",
+    "name": "PÃO7",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "vitin9",
+    "name": "Vitin9",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "r7xy",
+    "name": "R7xy",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "lopesxl",
+    "name": "LopesXL",
+    "region": "Brasil",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "raistar",
+    "name": "Raistar",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "white444",
+    "name": "White444",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "total-gaming",
+    "name": "Total Gaming",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "b2k-born2kill",
+    "name": "B2K / Born2Kill",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "gyan-gaming",
+    "name": "Gyan Gaming",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "lokesh-gamer",
+    "name": "Lokesh Gamer",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "sk-sabir-boss",
+    "name": "SK Sabir Boss",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "sultan-proslo",
+    "name": "Sultan Proslo",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "thedonato",
+    "name": "TheDonato",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "frontal-gaming",
+    "name": "Frontal Gaming",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "gamezking",
+    "name": "Gamezking",
+    "region": "Internacional",
+    "role": "Criador",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "moshi",
+    "name": "MOSHI",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "joena",
+    "name": "JOENA",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "gethigh",
+    "name": "GETHIGH",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "onfire",
+    "name": "ONFIRE",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "limit",
+    "name": "LIMIT",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "keroro",
+    "name": "KERORO",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "wassana",
+    "name": "WASSANA",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "thecruz",
+    "name": "THECRUZ",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "saifa",
+    "name": "SAIFA",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "baros",
+    "name": "BAROS",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "dew",
+    "name": "DEW",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "abay",
+    "name": "Abay",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "aimgod",
+    "name": "AimGOD",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "reyyy",
+    "name": "Reyyy",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "rasyah",
+    "name": "Rasyah",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "dutzz",
+    "name": "Dutzz",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "kojaa",
+    "name": "Kojaa",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "maal",
+    "name": "Maal",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "kyongg",
+    "name": "Kyongg",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "shoto",
+    "name": "SHOTO",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  },
+  {
+    "id": "wolvin",
+    "name": "WOLVIN",
+    "region": "Internacional",
+    "role": "Competitivo",
+    "platform": "mobile",
+    "hasPublishedData": false
+  }
+]
