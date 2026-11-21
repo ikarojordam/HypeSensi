@@ -1,0 +1,4 @@
+@keyframes hype-rise{from{opacity:.15;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.main-content>*,.page-head{animation:hype-rise .22s ease-out}
+:root[data-animations="off"] *, :root[data-animations="off"] *::before, :root[data-animations="off"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}

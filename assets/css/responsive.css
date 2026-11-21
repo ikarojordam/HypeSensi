@@ -1,0 +1,3 @@
+/* Responsividade extra para os módulos React Hype Sensi */
+@media(max-width:720px){.feature-grid,.stats-grid,.theme-grid{grid-template-columns:1fr!important}.split-panel{grid-template-columns:1fr!important}.action-buttons{flex-wrap:wrap}.home-hero{padding:22px!important}}
+@media(max-width:480px){.hype-card{padding:15px!important}.quiz-grid{grid-template-columns:1fr!important}.profile-row{gap:8px}.page-head h1{font-size:26px}}
