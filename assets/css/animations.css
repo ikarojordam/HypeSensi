@@ -31,3 +31,25 @@
 :root[data-animations="on"] .download-tile:hover .download-symbol svg,:root[data-animations="on"] .welcome-feature:hover .welcome-feature-icon svg{transform:scale(1.13) rotate(-5deg)}
 :root[data-animations="off"] *, :root[data-animations="off"] *::before, :root[data-animations="off"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Entrada do Dashboard: exibição de 5 segundos, sem utilizar a logo. */
+.dashboard-startup{position:relative;isolation:isolate;min-height:100svh;display:grid;place-items:center;overflow:hidden;padding:24px;background:var(--h-bg,#0d0713);color:#f9f4ff;font-family:inherit}
+.dashboard-startup__glow{position:absolute;inset:-30%;z-index:-1;background:radial-gradient(ellipse at 50% 47%,color-mix(in srgb,var(--h-accent,#a66ae7),transparent 79%),transparent 46%);pointer-events:none}
+.dashboard-startup__card{width:min(100%,470px);display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(26px,5vw,48px) clamp(20px,5vw,40px);border:1px solid var(--h-border,#4b315d);border-radius:24px;background:color-mix(in srgb,var(--h-panel,#1b1125),transparent 7%);box-shadow:0 25px 85px #0007;backdrop-filter:blur(20px)}
+.dashboard-startup__symbol{display:grid;place-items:center;width:94px;height:94px;border-radius:24px;color:var(--h-soft,#deb4ff);background:color-mix(in srgb,var(--h-accent,#a66ae7),transparent 85%);border:1px solid color-mix(in srgb,var(--h-accent,#a66ae7),transparent 45%);box-shadow:0 0 34px color-mix(in srgb,var(--h-accent,#a66ae7),transparent 78%);margin-bottom:26px}
+.dashboard-startup__eyebrow{font-size:10px;font-weight:800;letter-spacing:2px;color:var(--h-soft,#deb4ff)}
+.dashboard-startup h1{font-size:clamp(22px,4vw,30px);font-weight:850;line-height:1.25;margin:13px 0 10px;letter-spacing:-.6px}
+.dashboard-startup p{margin:0;max-width:340px;color:#c4b5d0;font-size:13px;line-height:1.65}
+.dashboard-startup__spinner{color:var(--h-soft,#deb4ff);margin:28px 0 15px;display:grid;place-items:center}
+.dashboard-startup__spinner svg{animation:hype-startup-spin 1s linear infinite}
+.dashboard-startup__progress{width:100%;height:8px;overflow:hidden;border-radius:99px;background:color-mix(in srgb,var(--h-border,#4b315d),transparent 22%);border:1px solid color-mix(in srgb,var(--h-border,#4b315d),transparent 35%)}
+.dashboard-startup__progress-fill{display:block;height:100%;width:0%;border-radius:inherit;background:linear-gradient(90deg,var(--h-accent,#a66ae7),var(--h-soft,#deb4ff));box-shadow:0 0 18px var(--h-accent,#a66ae7);animation:hype-startup-fill 5s linear both}
+.dashboard-startup__hint{font-size:11px;color:#b9a6c5;margin-top:13px}
+.dashboard-startup__back{margin-top:28px;color:var(--h-soft,#deb4ff);font-size:12px;text-decoration:none;display:inline-flex;align-items:center;gap:7px;border-radius:8px;padding:8px}
+.dashboard-startup__back:hover{text-decoration:underline}
+@keyframes hype-startup-spin{to{transform:rotate(360deg)}}
+@keyframes hype-startup-fill{from{width:0%}to{width:100%}}
+/* Movimento reduzido mantém os 5 s, mas dispensa rotação e animação. */
+:root[data-animations="off"] .dashboard-startup__progress-fill{width:100%}
+@media(prefers-reduced-motion:reduce){.dashboard-startup__progress-fill{width:100%}}
+@media(max-width:480px){.dashboard-startup{padding:16px}.dashboard-startup__card{border-radius:18px}.dashboard-startup__symbol{height:78px;width:78px}}
