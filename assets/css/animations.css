@@ -1,4 +1,33 @@
-@keyframes hype-rise{from{opacity:.15;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-.main-content>*,.page-head{animation:hype-rise .22s ease-out}
+/* Hype Sensi — sistema de movimento progressivo, respeitando preferências de acessibilidade */
+@keyframes hype-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+@keyframes hype-slide{from{opacity:0;transform:translateX(-16px)}to{opacity:1;transform:translateX(0)}}
+@keyframes hype-fade{from{opacity:0}to{opacity:1}}
+@keyframes hype-pulse{0%,100%{box-shadow:0 0 0 0 color-mix(in srgb,var(--h-accent),transparent 70%)}50%{box-shadow:0 0 0 8px transparent}}
+@keyframes hype-sheen{0%{transform:translateX(-160%) skewX(-22deg)}100%{transform:translateX(320%) skewX(-22deg)}}
+@keyframes hype-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes hype-glow{0%,100%{filter:drop-shadow(0 0 6px color-mix(in srgb,var(--h-accent),transparent 70%))}50%{filter:drop-shadow(0 0 18px color-mix(in srgb,var(--h-accent),transparent 40%))}}
+@keyframes hype-shimmer{from{background-position:220% 0}to{background-position:-220% 0}}
+@keyframes hype-modal-in{from{opacity:0;transform:scale(.96) translateY(14px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@keyframes hype-border{0%,100%{opacity:.55}50%{opacity:1}}
+:root[data-animations="on"] .route-enter{animation:hype-rise .38s cubic-bezier(.21,1,.32,1) both}
+:root[data-animations="on"] .route-enter .page-head{animation:hype-rise .48s .06s ease both}
+:root[data-animations="on"] .route-enter .hype-card, :root[data-animations="on"] .route-enter .panel, :root[data-animations="on"] .route-enter .player-card{animation:hype-rise .5s ease backwards}
+:root[data-animations="on"] .route-enter .hype-card:nth-child(2n){animation-delay:.07s}
+:root[data-animations="on"] .route-enter .hype-card:nth-child(3n){animation-delay:.12s}
+:root[data-animations="on"] .nav-link{animation:hype-slide .36s ease backwards}
+:root[data-animations="on"] .nav-link:nth-child(2){animation-delay:.04s}
+:root[data-animations="on"] .nav-link:nth-child(3){animation-delay:.08s}
+:root[data-animations="on"] .nav-link:nth-child(4){animation-delay:.12s}
+:root[data-animations="on"] .nav-link:nth-child(5){animation-delay:.16s}
+:root[data-animations="on"] .welcome-hero-brand img{animation:hype-float 6s ease-in-out infinite,hype-glow 5s ease-in-out infinite}
+:root[data-animations="on"] .logo-zone img{animation:hype-glow 5s ease-in-out infinite}
+:root[data-animations="on"] .welcome-pill{animation:hype-pulse 3.3s ease-in-out infinite}
+:root[data-animations="on"] .tutorial-overlay{animation:hype-fade .22s ease both}
+:root[data-animations="on"] .tutorial-modal{animation:hype-modal-in .36s cubic-bezier(.2,1,.35,1) both}
+:root[data-animations="on"] .tutorial-symbol{animation:hype-float 5s ease-in-out infinite}
+:root[data-animations="on"] .primary-action::before{animation:hype-sheen 5s ease-in-out infinite}
+:root[data-animations="on"] .hype-card:hover,:root[data-animations="on"] .player-card:hover{transform:translateY(-4px)}
+:root[data-animations="on"] .download-symbol svg,:root[data-animations="on"] .welcome-feature-icon svg{transition:transform .3s cubic-bezier(.2,1,.3,1)}
+:root[data-animations="on"] .download-tile:hover .download-symbol svg,:root[data-animations="on"] .welcome-feature:hover .welcome-feature-icon svg{transform:scale(1.13) rotate(-5deg)}
 :root[data-animations="off"] *, :root[data-animations="off"] *::before, :root[data-animations="off"] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;scroll-behavior:auto!important}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
