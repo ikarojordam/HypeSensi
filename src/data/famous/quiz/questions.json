@@ -1,0 +1,105 @@
+[
+  {
+    "id": "emulator",
+    "title": "Qual emulador você utiliza?",
+    "options": [
+      "BlueStacks",
+      "MSI App Player",
+      "LDPlayer",
+      "GameLoop",
+      "MuMu Player",
+      "Outro emulador"
+    ]
+  },
+  {
+    "id": "game",
+    "title": "Qual versão você joga?",
+    "options": [
+      "Free Fire",
+      "Free Fire MAX"
+    ]
+  },
+  {
+    "id": "ram",
+    "title": "Quanto de RAM seu PC possui?",
+    "options": [
+      "Até 4 GB",
+      "8 GB",
+      "12 a 16 GB",
+      "24 a 32 GB",
+      "Mais de 32 GB",
+      "Não sei"
+    ]
+  },
+  {
+    "id": "fps",
+    "title": "Como está a fluidez do jogo?",
+    "options": [
+      "Estável e fluido",
+      "Pequenas quedas",
+      "Quedas frequentes",
+      "Não sei"
+    ]
+  },
+  {
+    "id": "dpi",
+    "title": "Qual é o DPI configurado no seu mouse?",
+    "options": [
+      "400",
+      "800",
+      "1200",
+      "1600",
+      "2400+",
+      "Não sei"
+    ]
+  },
+  {
+    "id": "mouse",
+    "title": "Como você costuma mover o mouse?",
+    "options": [
+      "Movimentos curtos",
+      "Movimentos médios",
+      "Movimentos longos"
+    ]
+  },
+  {
+    "id": "aim",
+    "title": "Qual dificuldade você quer corrigir?",
+    "options": [
+      "Passa do alvo",
+      "Fica abaixo do alvo",
+      "Mira tremendo",
+      "Movimento muito lento",
+      "Quero equilibrar"
+    ]
+  },
+  {
+    "id": "speed",
+    "title": "Prefere sensibilidade...",
+    "options": [
+      "Mais controlada",
+      "Equilibrada",
+      "Mais rápida"
+    ]
+  },
+  {
+    "id": "scope",
+    "title": "Qual mira você mais utiliza?",
+    "options": [
+      "Sem mira / Geral",
+      "Ponto vermelho",
+      "Mira 2x",
+      "Mira 4x",
+      "AWM"
+    ]
+  },
+  {
+    "id": "adjust",
+    "title": "Qual intensidade de ajuste inicial?",
+    "options": [
+      "Conservador",
+      "Moderado",
+      "Mais perceptível"
+    ]
+  }
+]
