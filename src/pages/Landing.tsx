@@ -1,6 +1,6 @@
 import {useState} from 'react';
 import {Link} from 'react-router-dom';
-import {ArrowRight,CheckCircle2,ChevronDown,Crosshair,Download,Grid2X2,Menu,MonitorSmartphone,Save,ShieldCheck,SlidersHorizontal,Sparkles,Star,X} from 'lucide-react';
+import {ArrowRight,CheckCircle2,ChevronDown,Crosshair,Download,Grid2X2,Menu,MonitorSmartphone,Save,SlidersHorizontal,Sparkles,Star,X} from 'lucide-react';
 import {useTheme} from '../hooks/useTheme';
 import Downloads from './Downloads';
 
