@@ -1,9 +1,19 @@
-import {NavLink,Route,Routes,Navigate} from 'react-router-dom';
-import {Home,LayoutDashboard,Crosshair,Grid2X2,Star,SlidersHorizontal,Bookmark,Palette,Settings,HelpCircle,Menu, X} from 'lucide-react';
-import {useState} from 'react';
+import {useEffect,useState} from 'react';
+import {Navigate,Route,Routes} from 'react-router-dom';
+import MainLayout from './components/layout/MainLayout';
+import {ThemeContext,themeValues,type ThemeId} from './hooks/useTheme';
+import {getStored,store} from './lib/storage';
+import Home from './pages/Home';
+import Dashboard from './pages/Dashboard';
+import SensiIA from './pages/SensiIA';
+import HudStudio from './pages/HudStudio';
 import Famous from './pages/Famous';
 import FamousProfile from './pages/FamousProfile';
-import HudStudio from './pages/HudStudio';
-import LegacyTool from './pages/LegacyTool';
-const sections=[{title:'GERAL',links:[['/','Início',Home],['/ferramentas/painel','Painel principal',LayoutDashboard]]},{title:'FERRAMENTAS',links:[['/ferramentas/sensi','Sensi IA',Crosshair],['/hud-studio','HUD Studio',Grid2X2],['/famosos','Sensi e HUDs Famosos',Star],['/ferramentas/adapt','Hype Adapt',SlidersHorizontal],['/ferramentas/perfis','Meus Perfis',Bookmark]]},{title:'APLICATIVO',links:[['/ferramentas/temas','Temas e logos',Palette],['/ferramentas/configuracoes','Configurações',Settings],['/ferramentas/ajuda','Ajuda',HelpCircle]]}] as const;
-export default function App(){const [menu,setMenu]=useState(false);return <div className="shell"><aside className={'sidebar '+(menu?'open':'')}><div className="logo-zone"><img src="/assets/imagens/logos/logo-purple.png" alt="Hype Sensi"/><strong>HYPE SENSI</strong><span>PRECISION PLATFORM · WEBAPP</span></div><nav>{sections.map(s=><div className="nav-section" key={s.title}><p>{s.title}</p>{s.links.map(([path,label,Icon])=><NavLink key={path} end={path==='/'} className={({isActive})=>'nav-link '+(isActive?'active':'')} to={path} onClick={()=>setMenu(false)}><Icon size={18}/><span>{label}</span></NavLink>)}</div>)}</nav><footer className="sidebar-foot">Powered By<br/><strong>Frio Mortal Developer · FrioStore</strong></footer></aside>{menu&&<button aria-label="Fechar menu" className="backdrop" onClick={()=>setMenu(false)}/>}<div className="main-col"><header className="topbar"><button aria-label="Abrir menu" className="mobile-menu" onClick={()=>setMenu(v=>!v)}>{menu?<X/>:<Menu/>}</button><span>Hype Sensi <small>/ WebApp</small></span><span className="local-badge">LOCAL · PRIVADO</span></header><main className="main-content"><Routes><Route path="/" element={<Navigate to="/ferramentas/inicio" replace/>}/><Route path="/famosos" element={<Famous/>}/><Route path="/famosos/:id" element={<FamousProfile/>}/><Route path="/hud-studio" element={<HudStudio/>}/><Route path="/ferramentas/:tool" element={<LegacyTool/>}/><Route path="*" element={<Navigate to="/" replace/>}/></Routes></main><footer className="app-footer">Hype Sensi WebApp · Feito com esforço e café · FrioStore</footer></div></div>}
+import HypeAdapt from './pages/HypeAdapt';
+import SavedProfiles from './pages/SavedProfiles';
+import Themes from './pages/Themes';
+import Settings from './pages/Settings';
+import FAQ from './pages/FAQ';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
+export default function App(){const [theme,setTheme]=useState<ThemeId>(()=>{const stored=getStored('hype-theme','purple');return stored in themeValues?stored as ThemeId:'purple'});useEffect(()=>{store('hype-theme',theme);const colors=themeValues[theme];const css=['--h-accent','--h-soft','--h-bg','--h-panel','--h-surface','--h-border'];for(let i=0;i<css.length;i++)document.documentElement.style.setProperty(css[i],colors[i+1]);document.documentElement.style.backgroundColor=colors[3];document.documentElement.dataset.hypeTheme=theme},[theme]);useEffect(()=>{document.documentElement.dataset.animations=getStored('hype-animations',true)?'on':'off'},[]);return <ThemeContext.Provider value={{theme,setTheme}}><Routes><Route element={<MainLayout/>}><Route path="/" element={<Home/>}/><Route path="/dashboard" element={<Dashboard/>}/><Route path="/sensi" element={<SensiIA/>}/><Route path="/hud-studio" element={<HudStudio/>}/><Route path="/famosos" element={<Famous/>}/><Route path="/famosos/:id" element={<FamousProfile/>}/><Route path="/adapt" element={<HypeAdapt/>}/><Route path="/perfis" element={<SavedProfiles/>}/><Route path="/temas" element={<Themes/>}/><Route path="/configuracoes" element={<Settings/>}/><Route path="/ajuda" element={<FAQ/>}/><Route path="/termos" element={<Terms/>}/><Route path="/privacidade" element={<Privacy/>}/><Route path="*" element={<Navigate to="/" replace/>}/></Route></Routes></ThemeContext.Provider>}
