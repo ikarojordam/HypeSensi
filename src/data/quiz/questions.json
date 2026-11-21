@@ -1,14 +1,11 @@
 [
   {
-    "id": "emulator",
-    "title": "Qual emulador você utiliza?",
+    "id": "platform",
+    "title": "Onde você joga Free Fire?",
     "options": [
-      "BlueStacks",
-      "MSI App Player",
-      "LDPlayer",
-      "GameLoop",
-      "MuMu Player",
-      "Outro emulador"
+      "Android",
+      "iPhone / iPad (iOS)",
+      "PC / Emulador"
     ]
   },
   {
@@ -20,7 +17,25 @@
     ]
   },
   {
+    "id": "emulator",
+    "platforms": [
+      "PC / Emulador"
+    ],
+    "title": "Qual emulador você utiliza?",
+    "options": [
+      "BlueStacks",
+      "MSI App Player",
+      "LDPlayer",
+      "GameLoop",
+      "MuMu Player",
+      "Outro emulador"
+    ]
+  },
+  {
     "id": "ram",
+    "platforms": [
+      "PC / Emulador"
+    ],
     "title": "Quanto de RAM seu PC possui?",
     "options": [
       "Até 4 GB",
@@ -32,17 +47,10 @@
     ]
   },
   {
-    "id": "fps",
-    "title": "Como está a fluidez do jogo?",
-    "options": [
-      "Estável e fluido",
-      "Pequenas quedas",
-      "Quedas frequentes",
-      "Não sei"
-    ]
-  },
-  {
     "id": "dpi",
+    "platforms": [
+      "PC / Emulador"
+    ],
     "title": "Qual é o DPI configurado no seu mouse?",
     "options": [
       "400",
@@ -55,11 +63,79 @@
   },
   {
     "id": "mouse",
+    "platforms": [
+      "PC / Emulador"
+    ],
     "title": "Como você costuma mover o mouse?",
     "options": [
       "Movimentos curtos",
       "Movimentos médios",
       "Movimentos longos"
+    ]
+  },
+  {
+    "id": "device",
+    "platforms": [
+      "Android",
+      "iPhone / iPad (iOS)"
+    ],
+    "title": "Qual é o tamanho da tela do seu dispositivo?",
+    "options": [
+      "Celular compacto",
+      "Celular de tamanho médio",
+      "Celular grande",
+      "Tablet / iPad",
+      "Não sei"
+    ]
+  },
+  {
+    "id": "touch",
+    "platforms": [
+      "Android",
+      "iPhone / iPad (iOS)"
+    ],
+    "title": "Como você movimenta a mira na tela?",
+    "options": [
+      "Arrastos curtos",
+      "Arrastos médios",
+      "Arrastos longos"
+    ]
+  },
+  {
+    "id": "fingers",
+    "platforms": [
+      "Android",
+      "iPhone / iPad (iOS)"
+    ],
+    "title": "Quantos dedos você usa para jogar?",
+    "options": [
+      "2 dedos",
+      "3 dedos",
+      "4 dedos",
+      "5 ou mais dedos"
+    ]
+  },
+  {
+    "id": "gyro",
+    "platforms": [
+      "Android",
+      "iPhone / iPad (iOS)"
+    ],
+    "title": "Você utiliza giroscópio no jogo?",
+    "options": [
+      "Sim",
+      "Não",
+      "Não sei"
+    ]
+  },
+  {
+    "id": "fps",
+    "title": "Como está a fluidez do jogo?",
+    "options": [
+      "Estável e fluido",
+      "Pequenas quedas",
+      "Quedas frequentes",
+      "Não sei"
     ]
   },
   {
@@ -75,7 +151,7 @@
   },
   {
     "id": "speed",
-    "title": "Prefere sensibilidade...",
+    "title": "Você prefere uma sensibilidade...",
     "options": [
       "Mais controlada",
       "Equilibrada",
@@ -95,7 +171,7 @@
   },
   {
     "id": "adjust",
-    "title": "Qual intensidade de ajuste inicial?",
+    "title": "Qual intensidade de ajuste inicial você quer?",
     "options": [
       "Conservador",
       "Moderado",
